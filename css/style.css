@@ -1,0 +1,103 @@
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: #C65C9A;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 5px 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+#portfolio-row {
+  padding-top: 70px;
+  padding-bottom: 0px;
+}
+
+#about-row {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.porftolio-image {
+  padding: 40px !important;
+}
+
+.porftolio-image img {
+  transition: all 0.4s;
+}
+
+.porftolio-image img:hover {
+  transform: scale(1.08);
+  -webkit-box-shadow: 2px 2px 76px 7px rgba(0,0,0,0.33);
+  -moz-box-shadow: 2px 2px 76px 7px rgba(0,0,0,0.33);
+  box-shadow: 2px 2px 76px 7px rgba(0,0,0,0.33);
+}
+
+#links-menu ul li:hover {
+  font-weight: 600;
+}
+
+#social-menu ul li:hover {
+  font-weight: 600;
+}
+
+#cv-link:hover {
+  transform: scale(1.05);
+}
+
+#cv-link {
+  transition: all 0.1s;
+}
+
+#download-button:hover { 
+  background-color: #CECECE !important;
+  -webkit-box-shadow: 2px 2px 7px 7px rgba(0,0,0,0.33);
+  -moz-box-shadow: 2px 2px 7px 7px rgba(0,0,0,0.33);
+  box-shadow: 2px 2px 7px 7px rgba(0,0,0,0.33);
+}
+
+#infonet-text {
+  font-size: 12px;
+  font-family: 'Fira Sans', sans-serif;
+}
