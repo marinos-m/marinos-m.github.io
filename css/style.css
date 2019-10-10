@@ -83,7 +83,7 @@ footer.page-footer {
 }
 
 #cv-link:hover {
-  transform: scale(1.05);
+text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #C9C9C9, 0 0 30px #C9C9C9, 0 0 40px #C9C9C9, 0 0 55px #C9C9C9, 0 0 75px #C9C9C9;
 }
 
 #cv-link {
