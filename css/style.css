@@ -58,7 +58,7 @@ footer.page-footer {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-
+/*
 .porftolio-image {
   padding: 40px !important;
 }
@@ -68,12 +68,13 @@ footer.page-footer {
 }
 
 .porftolio-image img:hover {
+  filter: blur(3px);
   transform: scale(1.08);
   -webkit-box-shadow: 2px 2px 76px 7px rgba(0,0,0,0.33);
   -moz-box-shadow: 2px 2px 76px 7px rgba(0,0,0,0.33);
   box-shadow: 2px 2px 76px 7px rgba(0,0,0,0.33);
 }
-
+*/
 #links-menu ul li:hover {
   font-weight: 600;
 }
@@ -90,7 +91,7 @@ text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #C9C9C9, 0 0 3
   transition: all 0.1s;
 }
 
-#download-button:hover { 
+#download-button:hover {
   background-color: #CECECE !important;
   -webkit-box-shadow: 2px 2px 7px 7px rgba(0,0,0,0.33);
   -moz-box-shadow: 2px 2px 7px 7px rgba(0,0,0,0.33);
@@ -100,4 +101,89 @@ text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #C9C9C9, 0 0 3
 #infonet-text {
   font-size: 12px;
   font-family: 'Fira Sans', sans-serif;
+}
+
+
+/* --------------------new galley--------------------- */
+
+#blur-gallery img {
+  width: 100%; /* need to overwrite inline dimensions */
+  height: auto;
+}
+
+#blur-gallery {
+  margin-top: 85px;
+  margin-bottom: 85px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1em;
+}
+
+
+/* hover styles */
+.portfolio-listing {
+  position: relative;
+  transition: all 0.3s ease-in;
+}
+
+.portfolio-image {
+  line-height: 0;
+  overflow: hidden;
+}
+
+.portfolio-image img {
+  filter: blur(0px);
+  transition: filter 0.3s ease-in;
+}
+
+.portfolio-title {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: 'Rowdies', cursive;
+  text-decoration: none;
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .5s;
+  background: rgba(86, 4, 125, 0.4);
+  color: white;
+
+  /* position the text in t’ middle*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio-listing:hover .portfolio-title {
+  opacity: 1;
+}
+
+.portfolio-listing:hover {
+  transform: scale(1.03);
+  z-index: 99999999999999;
+  -webkit-box-shadow: 2px 2px 76px 7px rgba(0,0,0,0.33);
+  -moz-box-shadow: 2px 2px 76px 7px rgba(0,0,0,0.33);
+  box-shadow: 2px 2px 76px 7px rgba(0,0,0,0.33);
+}
+
+.portfolio-listing:hover .portfolio-image img {
+  filter: blur(2px);
+}
+
+
+/* for touch screen devices */
+@media (hover: none) {
+  .portfolio-title {
+    opacity: 1;
+  }
+  .portfolio-image img {
+    filter: blur(2px);
+  }
 }
