@@ -127,6 +127,7 @@ text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #C9C9C9, 0 0 3
 .portfolio-listing {
   position: relative;
   transition: all 0.3s ease-in;
+  padding: 3px;
 }
 
 .portfolio-image {
